@@ -141,3 +141,6 @@ with col_right:
             m_col1.metric("Total Budget Capital Disbursed", f"${int(output_df[sal_field].sum()):,}")
             m_col2.metric("Optimized Expected Return Yield", f"{output_df[proj_field].sum():.2f} pts")
             m_col3.metric("Remaining Safety Surplus", f"${int(budget_slider - output_df[sal_field].sum()):,}")
+
+st.sidebar.write("---")
+st.sidebar.markdown(f'![Visitor count](https://herokuapp.com)')
